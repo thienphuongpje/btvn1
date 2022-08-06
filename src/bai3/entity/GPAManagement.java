@@ -1,13 +1,13 @@
 package bai3.entity;
 
-import Main.QLSVMain;
-import Tool.TableRow;
-import qlgpa.logichandle.SubjectService;
-
+import bai3.service.QLSVMain;
+import model.TableRow;
+import bai3.logichandle.SubjectService;
+import bai3.entity.Subject;
 import java.util.*;
 
 public class GPAManagement {
-    private Student student;
+    private bai3.entity.Student student;
     private ArrayList<StudyResult> studentResult = new ArrayList<> ();
 
     public GPAManagement() {

@@ -1,10 +1,10 @@
-package bai3;
+package bai3.service;
 
-import Tool.TableRow;
-import qlgpa.entity.GPAManagement;
-import qlgpa.entity.Student;
-import qlgpa.logichandle.StudentService;
-import qlgpa.logichandle.SubjectService;
+import model.TableRow;
+import bai3.entity.GPAManagement;
+import bai3.entity.Student;
+import bai3.logichandle.StudentService;
+import bai3.logichandle.SubjectService;
 
 import java.io.*;
 import java.util.ArrayList;
