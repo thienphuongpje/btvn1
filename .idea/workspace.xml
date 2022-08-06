@@ -1,51 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="441e7ff3-230e-4da0-8cbb-0d1f5c47fb15" name="Changes" comment="commit11">
+    <list default="true" id="9442330c-3def-4941-abd6-b52cd84e4153" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai2/QLGV_Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai2/entity/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai2/entity/Teacher$Education.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai2/entity/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai2/service/SalaryMangament.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai3/entity/GPAManagement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai3/entity/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai3/entity/StudyResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai3/entity/Subject$SubjectType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai3/entity/Subject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai3/entity/test2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai3/logichandle/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai3/logichandle/SubjectService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/bai3/service/QLSVMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/model/GetFirstName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/model/People.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/model/TableRow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/btvn1/model/getInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai3/service/QLSVMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai3/service/QLSVMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btvn1.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2CxUJObwBvyvCPgKkAPipHvS9LK" />
+  <component name="ProjectId" id="2CxminXX4FIGwrDS7TjmYs4Btyz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,24 +22,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="bai2" />
-      <recent name="bai2.service" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="QLSVMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai3.service.QLSVMain" />
@@ -94,68 +48,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="441e7ff3-230e-4da0-8cbb-0d1f5c47fb15" name="Changes" comment="" />
-      <created>1659743658171</created>
+      <changelist id="9442330c-3def-4941-abd6-b52cd84e4153" name="Changes" comment="" />
+      <created>1659752740251</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1659743658171</updated>
-      <workItem from="1659743659417" duration="5064000" />
+      <updated>1659752740251</updated>
     </task>
-    <task id="LOCAL-00001" summary="commit">
-      <created>1659743743069</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1659743743069</updated>
-    </task>
-    <task id="LOCAL-00002" summary="commit">
-      <created>1659743876759</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1659743876759</updated>
-    </task>
-    <task id="LOCAL-00003" summary="commit11">
-      <created>1659744437680</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1659744437680</updated>
-    </task>
-    <task id="LOCAL-00004" summary="commit11">
-      <created>1659745258119</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1659745258119</updated>
-    </task>
-    <task id="LOCAL-00005" summary="commit11">
-      <created>1659748342666</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1659748342666</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit" />
-    <MESSAGE value="commit11" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit11" />
   </component>
 </project>
