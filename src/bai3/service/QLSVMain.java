@@ -93,30 +93,30 @@ public class QLSVMain {
 
     private static int functionChoice() {
         showMenu();
-        System.out.print("Xin mời chọn chức năng: ");
+        System.out.print("Xin moi chon chuc nang: ");
         int choice;
         do {
             choice = new Scanner(System.in).nextInt();
             if (choice >= 1 && choice <= 10) {
                 break;
             }
-            System.out.print("Lựa chọn không hợp lệ, vui lòng chọn lại: ");
+            System.out.print("Lua chon khong hop le, vui long chon lai: ");
         } while (true);
         return choice;
     }
 
     static void showMenu(){
-        System.out.println("Mời chọn chương trình");
+        System.out.println("Moi chon chuong trinh");
         System.out.println("1- Them sinh vien");
         System.out.println("2- Xem danh sach sinh vien");
         System.out.println("3- Them mon hoc");
-        System.out.println("4- Xem danh sách môn học");
+        System.out.println("4- Xem danh sach mon hoc");
         System.out.println("5- Nhap ket qua thi cho sinh vien");
         System.out.println("6- Tra cuu ket qua thi cua sinh vien");
-        System.out.println("7- Sắp xếp sinh viên theo thứ tự");
-        System.out.println("8- Bang tra cuu diem trung binh hoc ki của sinh viên");
+        System.out.println("7- Sap xep sinh vien theo thu tu");
+        System.out.println("8- Bang tra cuu diem trung binh hoc ki của sinh vien");
         System.out.println("9- Nhap thong tin sinh vien bang file ben ngoai");
-        System.out.println("10- Thoát khỏi chương trình");
+        System.out.println("10- Thoat khoi chương trinh");
     }
 
     static ArrayList<GPAManagement> sortResultList(){
