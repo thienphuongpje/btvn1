@@ -7,6 +7,9 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.Collectors;
 import bai3.entity.Student;
+import bai3.entity.GPAManagement;
+import bai3.service.QLSVMain;
+import model.TableRow;
 
 public class StudentService {
     public static Set<Student> studentList = new LinkedHashSet<>();

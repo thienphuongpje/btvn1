@@ -70,7 +70,7 @@ public class Student extends People implements getInput, GetFirstName {
     @Override
     public String getFirstName(){
         String firstName;
-        String[] name = this.getName().split("\s");
+        String[] name = this.getName().split("\\s");
         firstName = name[name.length-1];
         return firstName;
     }

@@ -3,6 +3,8 @@ package bai3.logichandle;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
+import bai3.entity.Subject;
+import model.TableRow;
 
 public class SubjectService {
     public static Set<Subject> subjects = new HashSet<>();
