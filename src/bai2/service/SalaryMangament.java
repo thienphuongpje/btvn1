@@ -1,9 +1,12 @@
-package QlyGiaoVien;
+package bai2.service;
+
+import bai2.entity.Teacher;
+import bai2.entity.Subject;
 
 public class SalaryMangament {
 
     private Teacher teacher;
-    private Subject[] subjects;
+    private bai2.entity.Subject[] subjects;
     private double salary;
     private int maxClass = 3;
     private int maxCredits = 200;
