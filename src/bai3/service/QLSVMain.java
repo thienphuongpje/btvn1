@@ -106,7 +106,7 @@ public class QLSVMain {
     }
 
     static void showMenu(){
-        System.out.println("Moi chon chuong trinh");
+        System.out.println("Moi chon chuong");
         System.out.println("1- Them sinh vien");
         System.out.println("2- Xem danh sach sinh vien");
         System.out.println("3- Them mon hoc");
@@ -114,9 +114,9 @@ public class QLSVMain {
         System.out.println("5- Nhap ket qua thi cho sinh vien");
         System.out.println("6- Tra cuu ket qua thi cua sinh vien");
         System.out.println("7- Sap xep sinh vien theo thu tu");
-        System.out.println("8- Bang tra cuu diem trung binh hoc ki của sinh vien");
+        System.out.println("8- Bang tra cuu diem trung binh hoc ki cua sinh vien");
         System.out.println("9- Nhap thong tin sinh vien bang file ben ngoai");
-        System.out.println("10- Thoat khoi chương trinh");
+        System.out.println("10- Thoat khoi chuong trinh");
     }
 
     static ArrayList<GPAManagement> sortResultList(){
