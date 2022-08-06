@@ -1,11 +1,9 @@
-package bai2.entity;
+package bai2;
 
-import QlyGiaoVien.SalaryMangament;
-import QlyGiaoVien.Subject;
-import QlyGiaoVien.Teacher;
-import Tool.TableRow;
+import bai2.entity.Teacher;
+import bai2.service.SalaryMangament;
+import model.TableRow;
 
-import javax.security.auth.Subject;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -14,7 +12,7 @@ public class QLGV_Main {
 
     private SalaryMangament[] classesList = new SalaryMangament[0]; // Danh sách giảng viên và số môn học đang đảm nhận
     private Teacher[] teachers = new Teacher[0];
-    private Subject[] subjectList = new Subject[0];
+    private bai2.entity.Subject[] subject2List = new bai2.entity.Subject[0];
     private Scanner ip = new Scanner(System.in);
     private boolean exit = false;
     private boolean exist = false;
@@ -29,8 +27,8 @@ public class QLGV_Main {
         }
     }
 
-    static Subject[] arrayConcat(Subject[] a, Subject[] b){
-        Subject[] ab = new Subject[a.length+b.length];
+    static bai2.entity.Subject[] arrayConcat(bai2.entity.Subject[] a, bai2.entity.Subject[] b){
+        bai2.entity.Subject[] ab = new bai2.entity.Subject[a.length+b.length];
         for (int i = 0; i < ab.length; i++) {
             if (i<a.length) ab[i] = a[i];
             else ab[i] = b[ab.length-i-1];
@@ -168,13 +166,13 @@ public class QLGV_Main {
                     System.out.println("Nhập số lượng môn học muốn thêm");
                     int n2 = ip.nextInt();
                     for (int i = 0; i < n2; i++) {
-                        Subject[] subject = new Subject[1];
+                        bai2.entity.Subject[] subject2 = new bai2.entity.Subject[1];
                         System.out.println("Nhập tên môn học: ");
                         ip.nextLine();
                         String subjectName = ip.nextLine();
                         boolean subjectExits = false;
-                        for (int j = 0; j < subjectList.length; j++) {
-                            if (subjectList[j].getSubjectName().toUpperCase().equals(subjectName.toUpperCase())) {
+                        for (int j = 0; j < subject2List.length; j++) {
+                            if (subject2List[j].getSubjectName().toUpperCase().equals(subjectName.toUpperCase())) {
                                 subjectExits = true;
                                 break;
                             }
@@ -185,22 +183,22 @@ public class QLGV_Main {
                         int practiceCredit = ip.nextInt();
                         System.out.println("Nhập giá 1 tiết của môn học");
                         double creditPrice = ip.nextDouble();
-                        empty = subjectList.length == 0;
+                        empty = subject2List.length == 0;
                         if (empty) {
-                            subjectList = new Subject[1];
-                            subjectList[0] = new Subject(subjectName, credit, practiceCredit, creditPrice);
-                            subjectList[0].setSubjectCode(100);
+                            subject2List = new bai2.entity.Subject[1];
+                            subject2List[0] = new bai2.entity.Subject(subjectName, credit, practiceCredit, creditPrice);
+                            subject2List[0].setSubjectCode(100);
                         } else {
                             if (!subjectExits) {
-                                subject[0] = new Subject(subjectName, credit, practiceCredit, creditPrice);
-                                subject[0].setSubjectCode(100 + i + subjectList.length);
-                                subjectList = arrayConcat(subjectList, subject);
+                                subject2[0] = new bai2.entity.Subject(subjectName, credit, practiceCredit, creditPrice);
+                                subject2[0].setSubjectCode(100 + i + subject2List.length);
+                                subject2List = arrayConcat(subject2List, subject2);
                             } else System.out.println("Môn học này đã có trong hệ thống");
                         }
                     }
                     System.out.println("Danh sách môn học hiện tại");
                     z = 0;
-                    for (Subject i : subjectList) {
+                    for (bai2.entity.Subject i : subject2List) {
                         System.out.println(z + " - " + i.getSubjectName());
                         z++;
                     }
@@ -241,7 +239,7 @@ public class QLGV_Main {
                     TableRow table2 = new TableRow(5, withd2);
                     table2.printTitle(titleConten2);
                     z = 0;
-                    for (Subject i : subjectList) {
+                    for (bai2.entity.Subject i : subject2List) {
                         table2.setCenterContent(0, String.valueOf(z));
                         table2.setCenterContent(1, String.valueOf(i.getSubjectCode()));
                         table2.setContent(2, i.getSubjectName());
@@ -269,18 +267,18 @@ public class QLGV_Main {
                             System.out.println("Nhập tên môn học: ");
                             Scanner input1 = new Scanner(System.in);
                             String sName = input1.nextLine();
-                            Subject currentSubject = new Subject();
-                            for (Subject j : subjectList) {
+                            bai2.entity.Subject currentSubject2 = new bai2.entity.Subject();
+                            for (bai2.entity.Subject j : subject2List) {
                                 if (j.getSubjectName().toUpperCase().equals(sName.toUpperCase())) {
                                     subjectExist = true;
-                                    currentSubject = j;
+                                    currentSubject2 = j;
                                     break;
                                 }
                             }
                             if (subjectExist) {
                                 System.out.println(" Nhập số lớp của môn học");
                                 int classNumbers = ip.nextInt();
-                                i.takeClass(currentSubject, classNumbers);
+                                i.takeClass(currentSubject2, classNumbers);
                                 break;
                             } else System.out.println("Môn học không tồn tại");
                         }
@@ -296,7 +294,7 @@ public class QLGV_Main {
                     for (SalaryMangament i : classesList) {
                         System.out.printf("- Giảng viên %s đang dạy %d lớp, tổng %d tiết dạy \n", i.getTeacher().getName(), i.calculateTotalClass(), i.calculateTotalCredit());
                         System.out.print("Danh sách các môn đảm nhận: ");
-                        for (Subject j : i.getSubjects()) {
+                        for (bai2.entity.Subject j : i.getSubjects()) {
                             System.out.println("+, " + j.getSubjectName());
                         }
                     }
@@ -345,7 +343,7 @@ public class QLGV_Main {
                     String[] subjectName = new String[0];
                     for (int i = 0; i < classesList.length; i++) {
                         double salary = 0;
-                        for (Subject j : classesList[i].getSubjects()) {
+                        for (bai2.entity.Subject j : classesList[i].getSubjects()) {
                             salary += j.getClassNumbers() * (j.getTheoryCredits() * j.getCreditPrice() + 0.7 * j.getpracticeCredits() * j.getCreditPrice());
                         }
                         salaries[i] = salary;

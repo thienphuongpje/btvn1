@@ -1,4 +1,4 @@
-package QlyGiaoVien;
+package bai2.entity;
 
 public class Subject {
     private int subjectCode;

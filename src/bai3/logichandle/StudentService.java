@@ -6,6 +6,7 @@ import java.util.LinkedHashSet;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.Collectors;
+import bai3.entity.Student;
 
 public class StudentService {
     public static Set<Student> studentList = new LinkedHashSet<>();
